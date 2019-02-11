@@ -11,6 +11,11 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
+# Ignore some plugins and some files we don't need in our plugins
+plugins/*
+!plugins/wordpress-fieldmanager
+!plugins/voicewp
+
 /.htaccess
 /license.txt
 /readme.html

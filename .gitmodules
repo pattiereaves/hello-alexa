@@ -1,0 +1,6 @@
+[submodule "plugins/voicewp"]
+	path = plugins/voicewp
+	url = https://github.com/tomharrigan/voicewp.git
+[submodule "themes/twentynineteen"]
+	path = themes/twentynineteen
+	url = https://github.com/WordPress/twentynineteen.git
