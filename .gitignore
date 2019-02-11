@@ -15,6 +15,7 @@ wp-content/plugins/hello.php
 plugins/*
 !plugins/wordpress-fieldmanager
 !plugins/voicewp
+!plugins/hello-alexa
 
 /.htaccess
 /license.txt
