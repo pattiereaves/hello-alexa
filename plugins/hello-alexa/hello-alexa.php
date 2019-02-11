@@ -131,4 +131,7 @@ class Hello_Alexa {
 	}
 }
 
-new Hello_Alexa();
+add_action('plugins_loaded', 'Hello_Alexa\run_plugin' );
+function run_plugin() {
+	new Hello_Alexa();
+}
