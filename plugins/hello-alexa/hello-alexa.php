@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name: Hello Alexa
  * Description: A hello-world example of how to use VoiceWP and Alexa.
