@@ -1,0 +1,13 @@
+{
+  "name": "hello-alexa",
+  "version": "1.0.0",
+  "description": "An example of how to use Voicewp to create an Alexa skill.",
+  "scripts": {
+    "start": "bst proxy http 9994 --verbose"
+  },
+  "author": "Pattie Reaves",
+  "license": "ISC",
+  "devDependencies": {
+    "bespoken-tools": "^2.1.17"
+  }
+}
