@@ -4,3 +4,6 @@
 [submodule "themes/twentynineteen"]
 	path = themes/twentynineteen
 	url = https://github.com/WordPress/twentynineteen.git
+[submodule "plugins/wordpress-fieldmanager"]
+	path = plugins/wordpress-fieldmanager
+	url = https://github.com/alleyinteractive/wordpress-fieldmanager.git
