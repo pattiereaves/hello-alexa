@@ -9,6 +9,9 @@ What makes a good Alexa skill?
 - Something that is triggered by an activity the user is doing (i.e. it's time to feed the dog)
 - Something that doesn't take a lot of back and forth with the user (voice interactions are not long)
 
+But this isn't a talk about what makes a great voice user interface
+- [Designing Voice User Interfaces book]()
+
 An overview of how Alexa Skills are engineered using VoiceWP
 
 You configure an API on your server
