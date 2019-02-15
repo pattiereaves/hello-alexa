@@ -1,0 +1,159 @@
+/**
+ * Alley Interactive Theme for reveal.js.
+ */
+
+// mixins and settings -----------------
+@import '../template/mixins';
+@import '../template/settings';
+
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+// ---------------------------------------------
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+// Override theme settings (see .../template/settings.scss)
+$backgroundColor: #333;
+$mainFontSize: 28px;
+$mainColor: #FFFFFF;
+$headingColor: #FFFFFF;
+$headingFontWeight: 700;
+$headingFont: 'Open Sans Condensed', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$linkColor: #FFFFFF;
+$linkColorHover: lighten($linkColor, 20%);
+$selectionBackgroundColor: rgba(79, 64, 28, 0.99);
+$heading1TextShadow: 0 0 0.1em rgba(0, 0, 0, 0.8);
+
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(10,10,10,1), rgba(70,70,70,1) );
+}
+
+// Theme template ------------------------------
+@import '../template/theme';
+// ---------------------------------------------
+
+.reveal {
+	.slides a {
+		border-bottom: 3px dashed rgba( 255, 255, 255, 0.33 );
+		padding-bottom: 2px;
+		color: #FFFFFF;
+	}
+
+
+	h2 {
+
+		img {
+			margin: 0;
+			background: none;
+			border: none;
+			box-shadow: none;
+			max-width: 60%;
+		}
+	}
+
+	ol, ul {
+		margin-top: 0.8em;
+
+		li {
+			margin-top: 0.3em;
+		}
+	}
+
+	p {
+		margin-top: 0.8em;
+	}
+
+	.valign {
+
+		&, * {
+			vertical-align: middle;
+		}
+	}
+}
+
+.print-pdf {
+
+	.backgrounds {
+		display: none;
+	}
+}
+
+// Fixed elements
+#logo {
+	bottom: 25px;
+	max-width: 200px;
+	min-width: 150px;
+	position: absolute;
+	right: 125px;
+	width: 20%;
+	z-index: 1000;
+}
+
+#hashtag {
+	width: 20%;
+	min-width: 200px;
+	position: absolute;
+	left: 50px;
+	bottom: 43px;
+	z-index: 1000;
+	color: #FFFFFF;
+}
+
+ul#primary-nav {
+	height: 10.5em;
+	margin: -5.25em 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 50%;
+	background: rgba(0,0,0,0.5);
+
+	li {
+		margin: 0;
+		padding: 0;
+
+		a {
+			display: block;
+			color: #FFFFFF;
+			width: 1.5em;
+			height: 1.5em;
+			text-align: center;
+			font: 400 1em/1.5em 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+			&:hover {
+				background: rgba(255,255,255,0.33);
+			}
+		}
+
+		&.current-menu-item a {
+			border-right: 5px solid #FFFFFF;
+		}
+	}
+}
+
+// Special slide elements
+#title-slide {
+	h1, h2, p, li {
+		font-weight: 700;
+		text-shadow: 0 0 10px rgba(0,0,0,0.8);
+	}
+}
