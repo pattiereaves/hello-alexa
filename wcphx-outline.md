@@ -30,8 +30,13 @@ In this talk, we’ll walk through setting up an Alexa Skill using the VoiceWP p
 
 ## How I got into Voice
 
-Colleague started developing the VoiceWP plugin
-Got a grant 
+- Colleague started developing the VoiceWP plugin
+- Got a Knight Foundation to make a skill for a Cooper Hewitt Smithsonian Design Musem where the user is "walking around in a gallery" using an Alexa skill
+- Accessibility
+- Relatively new technology
+- Mobile first of this decade
+
+---
 
 ## What is VoiceWP
 - Plugin that allows you to make an Alexa skill on a system you're already using.
